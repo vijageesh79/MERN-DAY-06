@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Window</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 30px;
+      border-radius: 10px;
+      width: 350px;
+      text-align: center;
+      color: white;
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px 10px;
+      margin-bottom: 20px;
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+      font-size: 14px;
+    }
+
+    .login-container input::placeholder {
+      color: gray;
+    }
+
+    .checkbox {
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .checkbox a {
+      color: #cfcfcf;
+      text-decoration: underline;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f9a825;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background-color: #e59400;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>LOGIN WINDOW</h2>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="password" placeholder="Your Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" required>
+          Agree With <a href="#">Terms & Condition</a>
+        </label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
