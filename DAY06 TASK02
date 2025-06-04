@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Window</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .login-box img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      margin-bottom: 25px;
+      font-weight: normal;
+      font-size: 22px;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      color: white;
+      padding: 10px 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .login-box input::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
+
+    .checkbox {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .checkbox a {
+      color: #00f;
+      text-decoration: underline;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-box button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Avatar">
+    <h2>LOGIN WINDOW</h2>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <input type="password" placeholder="Your Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" required>
+          Agree With <a href="#">Terms & Condition</a>
+        </label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
